@@ -9,14 +9,14 @@ public class Aluno {
 	public void atribuirNota(String periodoLetivo, double nota, int p) {
 		if ("b1".equals(periodoLetivo)) {
 			primeiroBimestre[p] = nota;
-			primeiroBimestre[4] = atribuirMedia(primeiroBimestre[0], primeiroBimestre[1], primeiroBimestre[2]);
+			primeiroBimestre[3] = atribuirMedia(primeiroBimestre[0], primeiroBimestre[1], primeiroBimestre[2]);
 
 		} else if ("b2".equals(periodoLetivo)) {
 			segundoBimestre[p] = nota;
-			segundoBimestre[4] = atribuirMedia(segundoBimestre[0], segundoBimestre[1], segundoBimestre[2]);
+			segundoBimestre[3] = atribuirMedia(segundoBimestre[0], segundoBimestre[1], segundoBimestre[2]);
 		} else if ("b3".equals(periodoLetivo)) {
 			terceiroBimestre[p] = nota;
-			terceiroBimestre[4] = atribuirMedia(terceiroBimestre[0], terceiroBimestre[1], terceiroBimestre[3]);
+			terceiroBimestre[3] = atribuirMedia(terceiroBimestre[0], terceiroBimestre[1], terceiroBimestre[3]);
 		}
 
 	}
